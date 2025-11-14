@@ -12,7 +12,7 @@ class Solution:
             next_node = current.next
             prev = dummy
 
-            while prev.next and prev.next.val <= current.val:
+            while prev.next and prev.next.val < current.val:
                 prev = prev.next
             current.next = prev.next
             prev.next = current
